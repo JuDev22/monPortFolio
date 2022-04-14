@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "base.css",
+	"sources": [
+		"../scss/base.scss",
+		"../scss/header.scss"
+	],
+	"sourcesContent": [
+		"@import 'header';",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
