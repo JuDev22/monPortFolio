@@ -21,7 +21,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Julian PortFolio</a>
+                <a class="navbar-brand fw-bold" href="#propos">Julian PortFolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
@@ -87,6 +87,7 @@
         <!-- App features section-->
         <section>
             <div class="container px-5">
+                <h4 class="display-4 lh-4 mb-3 d-flex justify-content-center">During my training</h4>
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
                         <div class="container-fluid px-5">
@@ -96,7 +97,10 @@
                                     <div class="text-center">
                                         <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Phone App</h3>
-                                        <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                        <i class="bi bi-apple"></i>
+                                        <i class="bi bi-microsoft"></i>
+                                        <p class="text-muted mb-0 mt-2">C# with Xamarin</p>
+                                        <p class="text-muted mb-0 mt-2">IDE Visual Studio</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
@@ -104,17 +108,38 @@
                                     <div class="text-center">
                                         <i class="bi-laptop icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Desktop App</h3>
-                                        <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
+                                        <i class="bi bi-microsoft"></i>
+                                        <p class="text-muted mb-0 mt-2">.NET Framework Console Application in C#</p>
+                                        <p class="text-muted mb-0 mt-2">IDE Visual Studio</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
+                            <div class="col-md-6">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <i class="bi-cpu icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Algorithm</h3>
+                                        <i class="bi bi-filetype-py"></i>
+                                        <p class="text-muted mb-0 mt-2">Python algorithm</p>
+                                        <p class="text-muted mb-0 mt-2">Python IDLE 3.9</p>
+                                        <p class="text-muted mb-0">Visual Studio Code</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
                                         <i class="bi-window icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Web Dev</h3>
-                                        <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
+                                        <i class="bi bi-filetype-html"></i>
+                                        <i class="bi bi-filetype-scss"></i>
+                                        <i class="bi bi-filetype-js"></i>
+                                        <i class="bi bi-filetype-php"></i>
+                                        <p class="text-muted mb-0 mt-2">HTML & SCSS/CSS</p>
+                                        <p class="text-muted mb-0">JavaScript & JSON</p>
+                                        <p class="text-muted mb-0">PHP & MVC Model</p>
+                                        <p class="text-muted mb-0 mt-2">Visual Studio Code</p>
+                                        <p class="text-muted mb-0">CodeIgniter4</p>
                                     </div>
                                 </div>
                             </div>
