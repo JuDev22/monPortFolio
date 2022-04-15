@@ -3,12 +3,14 @@
 	"file": "base.css",
 	"sources": [
 		"../scss/base.scss",
-		"../scss/header.scss"
+		"../scss/_header.scss",
+		"../scss/_projets.scss"
 	],
 	"sourcesContent": [
-		"@import 'header';",
-		""
+		"@import 'header';\r\n@import 'projets';",
+		"",
+		".img-fluid {\r\n    max-width: 100%;\r\n    height: auto;\r\n  }\r\n.page-section {\r\n    padding: 6rem 0;\r\n}\r\n.portfolio .portfolio-item {\r\n    cursor: pointer;\r\n    position: relative;\r\n    display: block;\r\n    max-width: 25rem;\r\n    border-radius: 0.5rem;\r\n    overflow: hidden;\r\n  }\r\n  .portfolio .portfolio-item .portfolio-item-caption {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transition: all 0.2s ease-in-out;\r\n    opacity: 0;\r\n    background-color: rgba(41, 55, 240, 0.55);\r\n  }\r\n  .portfolio .portfolio-item .portfolio-item-caption:hover {\r\n    opacity: 1;\r\n  }\r\n  .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {\r\n    font-size: 1.5rem;\r\n  }\r\n  \r\n  .portfolio-modal .btn-close {\r\n    color: rgba(41, 55, 240, 0.55);\r\n    font-size: 2rem;\r\n    padding: 1rem;\r\n  }\r\n  .portfolio-modal .portfolio-modal-title {\r\n    font-size: 2.25rem;\r\n    line-height: 2rem;\r\n  }\r\n  @media (min-width: 992px) {\r\n    .portfolio-modal .portfolio-modal-title {\r\n      font-size: 3rem;\r\n      line-height: 2.5rem;\r\n    }\r\n  }"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AEAA,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;;AACH,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,MAAM;CAClB;;;AACD,AAAA,UAAU,CAAC,eAAe,CAAC;EACvB,MAAM,EAAE,OAAO;EACf,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,KAAK;EAChB,aAAa,EAAE,MAAM;EACrB,QAAQ,EAAE,MAAM;CACjB;;;AACD,AAAA,UAAU,CAAC,eAAe,CAAC,uBAAuB,CAAC;EACjD,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,UAAU,EAAE,oBAAoB;EAChC,OAAO,EAAE,CAAC;EACV,gBAAgB,EAAE,uBAAuB;CAC1C;;;AACD,AAAA,UAAU,CAAC,eAAe,CAAC,uBAAuB,AAAA,MAAM,CAAC;EACvD,OAAO,EAAE,CAAC;CACX;;;AACD,AAAA,UAAU,CAAC,eAAe,CAAC,uBAAuB,CAAC,+BAA+B,CAAC;EACjF,SAAS,EAAE,MAAM;CAClB;;;AAED,AAAA,gBAAgB,CAAC,UAAU,CAAC;EAC1B,KAAK,EAAE,uBAAuB;EAC9B,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI;CACd;;;AACD,AAAA,gBAAgB,CAAC,sBAAsB,CAAC;EACtC,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,IAAI;CAClB;;AACD,MAAM,EAAE,SAAS,EAAE,KAAK;;EACtB,AAAA,gBAAgB,CAAC,sBAAsB,CAAC;IACtC,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,MAAM;GACpB"
 }
