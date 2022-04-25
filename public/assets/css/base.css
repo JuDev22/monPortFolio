@@ -1,3 +1,9 @@
+/* line 1, ../../../Projet/monPortFolio/public/assets/scss/_header.scss */
+.bi-github, .bi-linkedin {
+  height: 20px !important;
+  width: 20px !important;
+}
+
 /* line 1, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .img-fluid {
   max-width: 100%;
@@ -58,6 +64,13 @@
     font-size: 3rem;
     line-height: 2.5rem;
   }
+}
+
+/* line 1, ../../../Projet/monPortFolio/public/assets/scss/_contact.scss */
+.i-contact {
+  display: inline-block;
+  transform: scale(1.6);
+  margin: 5px;
 }
 
 /*# sourceMappingURL=base.css.map */
