@@ -7721,8 +7721,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: #6c757d !important;
 }
 
 .text-success {

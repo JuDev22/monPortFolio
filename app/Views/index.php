@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Hi, welcome to my Portfolio, were you can see my skills and what I want to do"/>
+    <meta name="author" content="Julian" />
     <title>Julian PortFolio</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <link href="assets/css/base.css" rel="stylesheet" />
+    <link href="<?= base_url('assets/css/styles.css')?>" rel="stylesheet" />
+    <link href="<?= base_url('assets/css/base.css')?>" rel="stylesheet" />
 </head>
 <!-- Portfolio Modal 1-->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -33,9 +33,51 @@
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-primary text-uppercase mb-2">ChopeGames Web</h2>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/CGweb.jpg" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="<?= base_url('assets/img/CGweb.jpg')?>" alt="Julian Portfolio" />
                             <!-- Portfolio Modal - Text-->
+                            <p class="mb-4"><a href="http://localhost/ChopeGames" target="blank">Lien local de ChopeGames</a></p>
                             <p class="mb-4">This application is developed through the CI4 framework and with the Viual Studio Code. Linked to its database and to the Desktop application, For customers, it is possible to identify themselves, place orders, subscribe to a Newsletter. For administrators, it is possible to manage orders, add products, brands, categories...</p>
+                            <h6 class="title-mission text-primary">Mission 1 - Right to be forgotten</h6>
+                            <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/droitOublie.jpg')?>" alt="Julian Portfolio" />
+                            <p class="text-secondary">Droit à l'oubli</p>
+                            <p>In accordance with the general data protection regulations, the customer has the possibility of asserting his right to be forgotten in the "Modifier mon compte" tab.</p>
+                            <h6 class="title-mission text-primary">Mission 2 - View games by category</h6>
+                            <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/categorie.jpg')?>" alt="Julian Portfolio" />
+                            <p class="text-secondary">Onglet catégories - marques</p>
+                            <p>In this second mission, the addition of a drop-down list was necessary for an easier search.</p>
+                            <h6 class="title-mission text-primary">Mission 3 - Create Category, brand and Admin Management</h6>
+                            <div class="d-flex flex-column">
+                                <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/ajoutCategorie.jpg')?>" alt="Julian Portfolio" />
+                                <p class="text-secondary">Ajout catégorie</p>
+                                <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/listeAdmin.jpg')?>" alt="Julian Portfolio" />
+                                <p class="text-secondary">Lister administrateur</p>
+                                <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/modifierAdmin.jpg')?>" alt="Julian Portfolio" />
+                                <p class="text-secondary">Modifier administrateur</p>
+                            </div>
+                            <h6 class="title-mission text-primary">Mission 4 - Newsletter</h6>
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/lettre.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Inscription</p>
+                                </div>
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/saisieLettre.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Saisie de la lettre</p>
+                                </div>
+                            </div>
+                            <p>Here, the work to be done was to create the "Lettre d'information" view for input and, in the footer, the field to register</p>
+                            <h6 class="title-mission text-primary">Mission 5 - Redesign of the order processing system.</h6>
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/nonTraite.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Liste des commandes non traitée</p>
+                                </div>
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/detailNonTraite.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Détail d'une commande non traitée</p>
+                                </div>
+                            </div>
+                            <p>Here it was necessary to modify the order processing system by displaying the list of unprocessed orders and the details of the order during a click. In addition, by clicking on "Passer la commande a traitée" an order confirmation email is sent.</p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close
@@ -59,35 +101,44 @@
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-primary text-uppercase mb-2">ChopeGames C#</h2>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/chopeGamesCsharp.jpg" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="<?= base_url('assets/img/chopeGamesCsharp.jpg')?>" alt="Julian Portfolio" />
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-4">This application is developed through the .NET framework and with the Viual Studio IDE. Linked to its database and to the Web application, this desktop application makes it possible to add, modify and delete products, but also to place orders, search for products or even create customers.</p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 3-->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-primary text-uppercase mb-2">Xamarin</h2>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/xamarin.png" alt="..." />
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <h6 class="title-mission text-primary">Mission 1 - Create a customer, a product</h6>
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/creeClient.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Crée un client</p>
+                                </div>
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/creeProduit.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Crée un produit</p>
+                                </div>
+                            </div>
+                            <p>In this assignment, I had to add database related fields for the "Crée un client" and "Crée un produit" screens considering Mr. Toadec's requirements.</p>
+                            <h6 class="title-mission text-primary">Mission 2 - Modify a product</h6>
+                            <div class="d-flex flex-column">
+                                <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/modifierProduit.jpg')?>" alt="Julian Portfolio" />
+                                <p class="text-secondary">Modifier un produit</p>
+                            </div>
+                            <p>In this mission, I had to make sure that by selecting a game, all the following fields are filled directly.</p>
+                            <h6 class="title-mission text-primary">Mission 3 - List a product</h6>
+                            <div class="d-flex flex-column">
+                                <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/listerProduit.jpg')?>" alt="Julian Portfolio" />
+                                <p class="text-secondary">Lister les produits</p>
+                            </div>
+                            <h6 class="title-mission text-primary">Mission 4 - Order details</h6>
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/listerCommande.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Lister les commandes</p>
+                                </div>
+                                <div class="d-flex flex-column m-1">
+                                    <img class="img-fluid rounded mb-1" src="<?= base_url('assets/img/detailsCommande.jpg')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Détails d'une commande</p>
+                                </div>
+                            </div>
+                            <p>In the latter, I had to add the following functionality, during a double click, open a new window which details the whole order.</p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close
@@ -111,13 +162,12 @@
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-primary text-uppercase mb-0">Links to sites that I have modified</h2>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/omorin.jpg" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="<?= base_url('assets/img/omorin.jpg')?>" alt="Julian Portfolio" />
                             <!-- Portfolio Modal - Text-->
                             <p>1 - Creation of the <a href="https://www.abitibi.fr" target="blank">Abitibi </a> home page</p>
                             <p>2 - Modification of the Back-Office to allow the chef of the restaurant <a href="https://www.letisseurdessaveurs.com/restaurant" target="blank"> Le tisseur des saveurs</a> to add/remove the four special menus</p>
                             <p>3 - There too, for the 'Cabinet paramédical de Saint-Savin' site, it was the modification of the Back-Office for the addition of a new caregiver on the <a href="https://www.paramedicalsaintsavin.fr/" target="blank"> home page</a> and the <a href="https://www.paramedicalsaintsavin.fr/contact"> contact page</a></p>
                             <p>4 - For the '<a href="https://www.cm-conseil.net/">CM-CONSEIL</a>' site, adding images, modifying images</p>
-                            <p>5 - When I didn't have projects to do, I took '<a href="https://openclassrooms.com/fr/dashboard/courses">OpenClassrooms</a>' courses and worked on the 'ChopeGames' site.</p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close
@@ -138,12 +188,40 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-primary text-uppercase mb-0">Locked Safe</h2>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="<?= base_url('assets/img/open.jpg')?>" alt="Julian Portfolio" />
                             <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <p>When I didn't have projects to do, I took '<a href="https://openclassrooms.com/fr/dashboard/courses">OpenClassrooms</a>' courses and worked on the 'ChopeGames' site.</p>
+                            <p>Here are the certificates received after validating the courses 100%</p>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex flex-column m-1">
+                                        <a class="img-fluid rounded mb-1" target="blank"  style="text-decoration: none;" href="<?= base_url('assets/img/openClassrooms/adopterUneArchitectureMVCavecPHP.pdf')?>" alt="Julian Portfolio">
+                                            <p class="text-secondary">Adopter une architecture MVC en PHP</p>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex flex-column m-1">
+                                        <a class="img-fluid rounded mb-1" target="blank" style="text-decoration: none;" href="<?= base_url('assets/img/openClassrooms/concevezVotreSiteWebAvecPHPMySQL.pdf')?>" alt="Julian Portfolio" />
+                                            <p class="text-secondary">Concevez votre site Web avec PHP MySQL</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex flex-column m-1">
+                                        <a class="img-fluid rounded mb-1" target="blank" style="text-decoration: none;" href="<?= base_url('assets/img/openClassrooms/ecrivezDuJavaScriptPourLeWeb.pdf')?>" alt="Julian Portfolio" />
+                                            <p class="text-secondary">Ecrivez du JavaScript pour le Web</p>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex flex-column m-1">
+                                        <a class="img-fluid rounded mb-1" target="blank" style="text-decoration: none;" href="<?= base_url('assets/img/openClassrooms/creeDesAnimationsCSSModernes.pdf')?>" alt="Julian Portfolio" />
+                                            <p class="text-secondary">Crée des animations CSS modernes</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="img-fluid rounded mb-1" style="text-decoration: none;" target="blank" href="<?= base_url('assets/img/openClassrooms/simplifiezVousLeCSSavecSASS.pdf')?>" alt="Julian Portfolio" />
+                                    <p class="text-secondary">Simplifiez-vous le CSS avec SASS</p>
+                                </a>
+                            </div>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close
@@ -167,7 +245,7 @@
                             <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-primary text-uppercase mb-0">Submarine</h2>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="<?= base_url('assets/img/portfolio/submarine.png')?>" alt="Julian Portfolio" />
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -182,27 +260,28 @@
     </div>
 </div>
 
-<body id="page-top" onload="loader()">
+<body id="page-top">
+<div class="loader" id="loader">Loading...</div>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a class="navbar-brand fw-bold" href="#propos">Julian PortFolio</a>
+            <a class="navbar-brand fw-bold" href="#propos">Julian Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-1" href="#propos"><i class="bi bi-person-lines-fill m-2"></i></i>About me</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-1" href="#projets"><i class="bi bi-display m-2"></i>Project</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-1" href="#veille"><i class="bi bi-card-checklist m-2"></i>Technological watch</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-1" href="#about-me"><i class="bi bi-person-lines-fill m-2"></i></i>About me</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-1" href="#projects"><i class="bi bi-display m-2"></i>Project</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-1" href="#watch"><i class="bi bi-card-checklist m-2"></i>Technological watch</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-1" href="mailto:b.julian.pro@icloud.com"><i class="bi bi-send m-2"></i>Contact</span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Mashead header-->
-    <header class="masthead" id="propos">
+    <header class="masthead" id="about-me">
         <div class="container p-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
@@ -212,13 +291,13 @@
                     </div>
                     <div class="d-flex flex-column flex-lg-row align-items-center">
                         <p>
-                            👀 I'm interested in Swift development <br>
+                            👀 I'm interested in Full-Stack development <br>
                             🌱 I'm currently learning Full-Stack development and application programming,<br>
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/img/macbook-pro.png" height="100%" width="100%">
+                    <img src="<?= base_url('assets/img/macbook-pro.png')?>" height="100%" width="100%">
                 </div>
             </div>
         </div>
@@ -289,7 +368,7 @@
         </div>
     </section>
     <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="projets">
+    <section class="page-section portfolio" id="projects">
         <!-- Portfolio Grid Items-->
         <div class="container">
             <div class="row justify-content-center">
@@ -300,7 +379,7 @@
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/CGweb.jpg" alt="..." />
+                        <img class="img-fluid" src="<?= base_url('assets/img/CGweb.jpg')?>" alt="Julian Portfolio" />
                     </div>
                 </div>
                 <!-- Portfolio Item 2-->
@@ -309,16 +388,7 @@
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/chopeGamesCsharp.jpg" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/xamarin.png" />
+                        <img class="img-fluid" src="<?= base_url('assets/img/chopeGamesCsharp.jpg')?>" alt="Julian Portfolio" />
                     </div>
                 </div>
             </div>
@@ -332,14 +402,22 @@
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/omorin.jpg" alt="..." />
+                        <img class="img-fluid" src="<?= base_url('assets/img/omorin.jpg')?>" alt="Julian Portfolio" />
                     </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="<?= base_url('assets/img/open.jpg')?>" alt="Julian Portfolio" />
                 </div>
             </div>
         </div>
     </section>
     <!-- Basic features section-->
-    <section class="bg-light" id="veille">
+    <section class="bg-light" id="watch">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-12 col-lg-5">
@@ -356,7 +434,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 col-md-6">
-                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="assets/img/feedly.png" alt="..." /></div>
+                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="<?= base_url('assets/img/feedly.png')?>" alt="Julian Portfolio" /></div>
                 </div>
             </div>
         </div>
@@ -367,15 +445,15 @@
             <div class="text-white-50 small">
                 <div class="mb-2">&copy; Julian PortFolio 2022. All Rights Reserved.</div>
             </div>
-            <a href="https://github.com/JuDev22"><i class="bi bi-github i-contact"></i></a>
-            <a href="https://www.linkedin.com/in/julian-belleguic-b0b848228"><i class="bi bi-linkedin i-contact"></i></a>
+            <a target="blank" href="https://github.com/JuDev22"><i class="bi bi-github i-contact"></i></a>
+            <a target="blank" href="https://www.linkedin.com/in/julian-belleguic-b0b848228"><i class="bi bi-linkedin i-contact"></i></a>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/loader.js"></script>
+    <script src="<?= base_url('assets/js/loader.js')?>"></script>
 </body>
 
 </html>

@@ -1,59 +1,45 @@
-$light-grey: #EEE;
-$blue: rgb(41, 55, 240);
-
-html,
-body {
-    height: 100%;
-}
+$color-background: #eaecfa;
+$color-loader: rgb(41, 55, 240);
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $light-grey;
+  background: $color-background;
+}
+.loader {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: $color-loader;
+  letter-spacing: 0.2em;
+  
+  &::before, &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: $color-loader;
+    position: absolute;
+    animation: load .7s infinite alternate ease-in-out;
+  }
+  
+  &::before {
+    top: 0;
+  }
+  
+  &::after {
+    bottom: 0;
+  }
 }
 
-.loading {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    height: 200px;
-}
-
-.loading-bar {
-    display: flex;
-    align-items: flex-end;
-    width: 50px;
-    height: 100%;
-    background-color: darken($light-grey, 8%);
-    box-shadow: inset 0 0 4px darken($light-grey, 16%);
-    border-radius: 8px;
-    transform: translateZ(0);
-    overflow: hidden;
-    
-    &:before {
-        content: '';
-        width: 100%;
-        height: 30%;
-        background: linear-gradient($blue, darken($blue, 16%));
-        animation: loading 1.8s infinite;
-    }
-    
-    &:nth-child(2) {
-        &:before {
-            animation-delay: 0.2s;
-        }
-    }
-    
-    &:nth-child(3) {
-        &:before {
-            animation-delay: 0.4s;
-        }
-    }
-}
-
-@keyframes loading {
-    0% { height: 30%; }
-    40%, 70% { height: 100%; }
-    100% { height: 30%; }
+@keyframes load {
+  0% { left: 0; height: 30px; width: 15px }
+  50% { height: 8px; width: 40px }
+  100% { left: 235px; height: 30px; width: 15px}
 }

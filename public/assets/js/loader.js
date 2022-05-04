@@ -1,3 +1,11 @@
-function loader(){
-    document.getElementsByClassName('body').append('<div class="loading"><span class="loading-bar"></span><span class="loading-bar"></span><span class="loading-bar"></span></div>')
+document.onreadystatechange = function () {
+    console.log(document.readyState);
+    if (document.readyState != 'complete') {
+        document.querySelector("body").style.visibility = 'hidden';
+        document.querySelector("#loader").style.visibility = 'visible';
+    }
+    else{
+        document.querySelector("body").style.visibility = 'visible';
+        document.querySelector("#loader").style.visibility = 'hidden';
+    }
 }

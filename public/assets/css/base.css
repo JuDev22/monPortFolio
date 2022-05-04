@@ -1,21 +1,19 @@
-/* line 1, ../../../Projet/monPortFolio/public/assets/scss/_header.scss */
-.bi-github, .bi-linkedin {
-  height: 20px !important;
-  width: 20px !important;
+.i-contact{
+  display: inline-block;
+  transform: scale(1.6);
+  margin: 5px;
 }
-
-/* line 1, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
+.bi-github, .bi-linkedin{
+  height: 20px!important;
+  width: 20px!important;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
-
-/* line 5, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .page-section {
   padding: 6rem 0;
 }
-
-/* line 8, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -24,8 +22,6 @@
   border-radius: 0.5rem;
   overflow: hidden;
 }
-
-/* line 16, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
@@ -34,43 +30,97 @@
   opacity: 0;
   background-color: rgba(41, 55, 240, 0.55);
 }
-
-/* line 24, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
 }
-
-/* line 27, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
 
-/* line 31, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .portfolio-modal .btn-close {
   color: rgba(41, 55, 240, 0.55);
   font-size: 2rem;
   padding: 1rem;
 }
-
-/* line 36, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
-
 @media (min-width: 992px) {
-  /* line 41, ../../../Projet/monPortFolio/public/assets/scss/_projets.scss */
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
 }
-
-/* line 1, ../../../Projet/monPortFolio/public/assets/scss/_contact.scss */
-.i-contact {
-  display: inline-block;
-  transform: scale(1.6);
-  margin: 5px;
+body {
+  background: #eaecfa;
 }
 
-/*# sourceMappingURL=base.css.map */
+.loader {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(41, 55, 240);
+  letter-spacing: 0.2em;
+}
+.loader::before, .loader::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgb(41, 55, 240);
+  position: absolute;
+  -webkit-animation: load 0.7s infinite alternate ease-in-out;
+          animation: load 0.7s infinite alternate ease-in-out;
+}
+.loader::before {
+  top: 0;
+}
+.loader::after {
+  bottom: 0;
+}
+
+@-webkit-keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+.title-mission{
+  font-size: 18px;
+}
